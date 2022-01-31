@@ -1,4 +1,3 @@
-<!-- start-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/css.css">
-    <title>Добавление артикула</title>
+    <title>Артикул B0101543</title>
 </head>
 <body>
 <!-- nav bar -->
@@ -27,7 +26,7 @@
                     <a class="nav-link " aria-current="page" href="test">Статус</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="list.php">Список артикулов</a>
+                    <a class="nav-link " href="list.php">Список артикулов</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="addpage.php">Добавить новый артикул</a>
@@ -43,38 +42,31 @@
 <!--базы данных--->
 
 <div class="container">
-    <h2>Список артикулов готовой продукции</h2>
+    <h2>Артикул B0101543 BD MT NANI PREM MAXI 54PCS. Сырье для внесения:</h2>
 
     <table class="table table-bordered">
         <thead>
         <tr>
-            <td>B0101543</td>
-            <td>BD MT NANI PREM MAXI 54PCS</td>
+            <td>RC020032</td>
+            <td>SAP OC EK-X EN72A</td>
             <td >
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="todo.php" type="button" class="btn btn-primary" >Перейти</a>
+                    <a href="#" type="button" class="btn btn-primary" >Выполнено</a>
                 </div>
             </td>
         </tr>
         <tr>
-            <td>B0101543</td>
-            <td>BD MT NANI PREM JUNIOR 44PCS</td>
+            <td>RA020012</td>
+            <td>GLUE CONSTRU FOCUS T178</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-primary" >Перейти</a>
+                    <a href="#" type="button" class="btn btn-danger" >Не выполнено</a>
                 </div>
             </td>
         </tr>
-        <tr>
-            <td>B0101544</td>
-            <td>BD MT NANI PREM XL 38PCS</td>
-            <td>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-primary" >Перейти</a>
-                </div>
-            </td>
-        </tr>
+
         </thead>
     </table>
 </div>
 </body>
+
