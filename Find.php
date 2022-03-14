@@ -21,19 +21,21 @@
 
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
 
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="test">Реестр изменений</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="test.php">Реестр изменений</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="test">Статус</a>
+                    <a class="nav-link" aria-current="page" href="test.php">Статус</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="list.php">Список артикулов</a>
@@ -42,10 +44,10 @@
                     <a class="nav-link" href="addpage.php">Добавить новый артикул</a>
                 </li>
             </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Артикул" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Поиск</button>
-                </form>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Артикул" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
         </div>
     </div>
 </nav>
@@ -64,11 +66,11 @@
         <tr>
             <td>B0101543</td>
             <td>BD MT NANI PREM MAXI 54PCS</td>
-            <td >
+            <td>
 
 
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-primary" >Выполнено</a>
+                    <a href="#" type="button" class="btn btn-primary">Выполнено</a>
                 </div>
             </td>
         </tr>
@@ -76,13 +78,14 @@
             <td>B0101545</td>
             <td>BD MT NANI PREM JUNIOR 44PCS</td>
             <td>
-            <!--  <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="#" type="button" class="btn btn-primary" >Выполнено</a>
-            </div>-->
+                <!--  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" type="button" class="btn btn-primary" >Выполнено</a>
+                </div>-->
 
                 <!--Dropdown-->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Выбрать
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -99,7 +102,7 @@
             <td>BD MT NANI PREM XL 38PCS</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-danger" >Не выполнено</a>
+                    <a href="#" type="button" class="btn btn-danger">Не выполнено</a>
                 </div>
             </td>
         </tr>

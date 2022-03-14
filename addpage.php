@@ -17,14 +17,15 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="test">Реестр изменений</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="test.php">Реестр изменений</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="test">Статус</a>
+                    <a class="nav-link " aria-current="page" href="test.php">Статус</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="list.php">Список артикулов</a>
@@ -50,48 +51,134 @@
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Новый артикул</label>
     <input type="text" class="form-control_addpage" id="exampleFormControlInput1" placeholder="Введите артикул SAP">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+            Взаимозаменяемый
+        </label>
+    </div>
 </div>
 <!-- Поле ввода типа материала-->
+
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Тип материала</label>
-    <input type="text" class="form-control_addpage" id="exampleFormControlInput1" placeholder="Защитная пленка">
+    <input type="text" class="form-control_addpage" id="exampleFormControlInput1" placeholder="Защитная пленка"><br>
+
 </div>
 <!-- Выбор производственной линии-->
-<div class="mb-3" id="addpage">
-    <label for="exampleFormControlInput1" class="form-label">Линия</label>
-    <!-- Код выбора производственной линии-->
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            NP1
-        </label>
+<div class="container_1">
+    <div class="row justify-content-start">
+        <div class="col-2">
+            <div class="mb-3" id="addpage">
+                <label for="exampleFormControlInput1" class="form-label">Нижний Новгород</label>
+                <!-- Код выбора производственной линии-->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        NP1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NP3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NT2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NT3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NU01
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NU02
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        NTA
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="container-fluid">
+                <label for="exampleFormControlInput1" class="form-label">Елабуга</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JBP1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JBP2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JBD1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JBD2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JBD3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        JAD1
+                    </label>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-sm">Выбрать все</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-        <label class="form-check-label" for="flexCheckChecked">
-            NP3
-        </label>
+
+    <div class="mb-3" id="addpage">
+        <form>
+            <label for="inputDate">Дата письма</label>
+            <br>
+            <input type="date" class="form-control-date-addpage" width="20%">
+        </form>
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-        <label class="form-check-label" for="flexCheckChecked">
-            NT2
-        </label>
+    <div class="row justify-content-start">
+        <div class="col-4">
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Фото ярлыка сырья</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+        </div>
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-        <label class="form-check-label" for="flexCheckChecked">
-           NT3
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-        <label class="form-check-label" for="flexCheckChecked">
-            NU
-        </label>
+
+    <div class="col-12">
+        <button class="btn btn-primary" id="add" type="submit"> Добавить</button>
     </div>
 </div>
-  <div class="col-12">
-    <button class="btn btn-primary" id="add" type="submit"> Добавить </button>
-  </div>
 </body>

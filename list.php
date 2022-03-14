@@ -17,14 +17,14 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="test">Реестр изменений</a>
+        <a class="navbar-brand" href="test.php">Реестр изменений</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="test">Статус</a>
+                    <a class="nav-link " aria-current="page" href="test.php">Статус</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="list.php">Список артикулов</a>
@@ -72,9 +72,14 @@
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a href="#" type="button" class="btn btn-primary" >Перейти</a>
                 </div>
-            </td>
+    </table>
+</div>
+</body>
+
+</td>
         </tr>
         </thead>
     </table>
 </div>
 </body>
+</html>

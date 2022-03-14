@@ -1,3 +1,4 @@
+<!-- start-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/css.css">
-    <title>Артикул B0101543</title>
+    <title>Добавление артикула</title>
 </head>
 <body>
 <!-- nav bar -->
@@ -26,7 +27,7 @@
                     <a class="nav-link " aria-current="page" href="test.php">Статус</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="list.php">Список артикулов</a>
+                    <a class="nav-link active" href="list.php">Список артикулов</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="addpage.php">Добавить новый артикул</a>
@@ -42,31 +43,68 @@
 <!--базы данных--->
 
 <div class="container">
-    <h2>Артикул B0101543 BD MT NANI PREM MAXI 54PCS. Сырье для внесения:</h2>
+    <h2>Список артикулов готовой продукции</h2>
+    <?php
+    $conn = new mysqli("localhost", "root", "root", "webapp");
+    if($conn->connect_error){
+        die("Ошибка: " . $conn->connect_error);
+    }
+    $sql = "SELECT * FROM code_information";
+    if($result = $conn->query($sql)){
+        $rowsCount = $result->num_rows; // количество полученных строк
+        echo "<table><tr><th>Id</th><th>work_center</th><th>material</th><th>material_description</th></tr>";
+        foreach($result as $row){
+            echo "<tr>";
+            echo "<td>" . $row["id"] . "</td>";
+            echo "<td>" . $row["work_center"] . "</td>";
+            echo "<td>" . $row["material"] . "</td>";
+            echo "<td>" . $row["material_description"] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+        $result->free();
+        echo "<p> Всего артикулов: $rowsCount</p>";
+    } else{
+        echo "Ошибка: " . $conn->error;
+    }
+    $conn->close();
+    ?>
 
     <table class="table table-bordered">
         <thead>
         <tr>
-            <td>RC020032</td>
-            <td>SAP OC EK-X EN72A</td>
+            <td>B0101543</td>
+            <td>BD MT NANI PREM MAXI 54PCS</td>
             <td >
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-primary" >Выполнено</a>
+                    <a href="todo.php" type="button" class="btn btn-primary" >Перейти</a>
                 </div>
             </td>
         </tr>
         <tr>
-            <td>RA020012</td>
-            <td>GLUE CONSTRU FOCUS T178</td>
+            <td>B0101543</td>
+            <td>BD MT NANI PREM JUNIOR 44PCS</td>
             <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" type="button" class="btn btn-danger" >Не выполнено</a>
+                    <a href="#" type="button" class="btn btn-primary" >Перейти</a>
                 </div>
             </td>
         </tr>
-
-        </thead>
+        <tr>
+            <td>B0101544</td>
+            <td>BD MT NANI PREM XL 38PCS</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" type="button" class="btn btn-primary" >Перейти</a>
+                </div>
     </table>
 </div>
 </body>
 
+</td>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>
