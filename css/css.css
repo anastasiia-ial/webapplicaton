@@ -59,3 +59,12 @@
     margin-left: auto;
 
 }
+ul{
+    padding: 0 10px !important;
+}
+ul li{
+    list-style: square;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: aqua;
+}
